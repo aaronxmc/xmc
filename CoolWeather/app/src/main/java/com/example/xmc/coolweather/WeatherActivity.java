@@ -1,5 +1,6 @@
 package com.example.xmc.coolweather;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Build;
@@ -23,6 +24,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.xmc.coolweather.gson.Forecast;
 import com.example.xmc.coolweather.gson.Weather;
+import com.example.xmc.coolweather.service.AutoUpdateService;
 import com.example.xmc.coolweather.util.HttpUtil;
 import com.example.xmc.coolweather.util.Utility;
 
@@ -204,6 +206,8 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
     private void loadBingPic(){
         String requestBingPic = "http://guolin.tech/api/bing_pic";
