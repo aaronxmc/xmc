@@ -1,2 +1,2 @@
 # xmc
-全是练习demo
+全是练习的demo
