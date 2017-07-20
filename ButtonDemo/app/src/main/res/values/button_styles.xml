@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="A_01">
+        <item name="android:textColor">@color/c01</item>
+        <item name="android:background">@drawable/yxbtn_a_01_selector</item>
+    </style>
+    <style name="A_02">
+        <item name="android:textColor">@color/c01</item>
+        <item name="android:background">@drawable/yxbtn_a_02_selector</item>
+    </style>
 </resources>
