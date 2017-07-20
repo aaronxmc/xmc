@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/r09"
+        android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/r15"></solid>
+        </shape>
+    </item>
+    <item android:color="@color/r11"
+        android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/y07" />
+        </shape>
+    </item>
+
+    <item android:color="@color/r11">
+        <shape>
+            <solid android:color="@color/y04" />
+        </shape>
+    </item>
+
+</selector>

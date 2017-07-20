@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="false">
+    <item android:color="@color/r09"
+        android:state_enabled="false">
         <shape>
-            <corners android:radius="3dp"></corners>
-            <solid android:color="@color/r06_50"></solid>
+            <solid android:color="@color/r15"></solid>
         </shape>
     </item>
-    <item android:state_pressed="true">
+    <item android:color="@color/c01"
+        android:state_pressed="true">
         <shape>
-            <corners android:radius="3dp" />
             <solid android:color="@color/r05" />
         </shape>
     </item>
 
-    <item>
+    <item android:color="@color/c01">
         <shape>
-            <corners android:radius="3dip" />
             <solid android:color="@color/r01" />
         </shape>
     </item>

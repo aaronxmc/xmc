@@ -2,20 +2,20 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_enabled="false">
         <shape>
-            <corners android:radius="3dp"></corners>
+            <corners android:radius="3pt"></corners>
             <solid android:color="@color/r06_50"></solid>
         </shape>
     </item>
     <item android:state_pressed="true">
         <shape>
-            <corners android:radius="3dp" />
+            <corners android:radius="3pt" />
             <solid android:color="@color/y07" />
         </shape>
     </item>
 
     <item>
         <shape>
-            <corners android:radius="3dip" />
+            <corners android:radius="3pt" />
             <solid android:color="@color/y04" />
         </shape>
     </item>

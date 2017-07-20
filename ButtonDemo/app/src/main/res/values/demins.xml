@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="T01">9sp</dimen>
+    <dimen name="T02">10sp</dimen>
+    <dimen name="T03">11sp</dimen>
+    <dimen name="T04">12sp</dimen>
+    <dimen name="T05">13sp</dimen>
+    <dimen name="T06">14sp</dimen>
+    <dimen name="T07">15sp</dimen>
+    <dimen name="T08">16sp</dimen>
+    <dimen name="T09">17sp</dimen>
+    <dimen name="T10">18sp</dimen>
+    <dimen name="T11">19sp</dimen>
+    <dimen name="T12">21sp</dimen>
+</resources>

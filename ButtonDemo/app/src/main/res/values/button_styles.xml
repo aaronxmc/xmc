@@ -2,10 +2,65 @@
 <resources>
     <style name="A_01">
         <item name="android:textColor">@color/c01</item>
-        <item name="android:background">@drawable/yxbtn_a_01_selector</item>
+        <item name="android:textSize">@dimen/T09</item>
+        <item name="android:background">@drawable/yx_btn_a_01_selector</item>
     </style>
     <style name="A_02">
         <item name="android:textColor">@color/c01</item>
-        <item name="android:background">@drawable/yxbtn_a_02_selector</item>
+        <item name="android:textSize">@dimen/T09</item>
+        <item name="android:background">@drawable/yx_btn_a_02_selector</item>
+    </style>
+    <style name="A_03">
+        <item name="android:textColor">@color/c01</item>
+        <item name="android:textSize">@dimen/T06</item>
+        <item name="android:background">@drawable/yx_btn_a_01_selector</item>
+    </style>
+    <style name="A_04">
+        <item name="android:textColor">@color/c01</item>
+        <item name="android:textSize">@dimen/T06</item>
+        <item name="android:background">@drawable/yx_btn_a_02_selector</item>
+    </style>
+    <style name="A_05">
+        <item name="android:textColor">@color/c01</item>
+        <item name="android:textSize">@dimen/T05</item>
+        <item name="android:background">@drawable/yx_btn_a_01_selector</item>
+    </style>
+    <style name="A_06">
+        <item name="android:textColor">@color/c01</item>
+        <item name="android:textSize">@dimen/T05</item>
+        <item name="android:background">@drawable/yx_btn_a_02_selector</item>
+    </style>
+    <style name="A_07">
+        <item name="android:textColor">@color/c07</item>
+        <item name="android:textSize">@dimen/T06</item>
+        <item name="android:background">@drawable/yx_btn_a_03_selector</item>
+    </style>
+    <style name="B_01">
+        <item name="android:textColor">@drawable/yx_btn_a_04_selector</item>
+        <item name="android:textSize">@dimen/T04</item>
+        <item name="android:background">@drawable/yx_btn_a_04_selector</item>
+    </style>
+    <style name="B_02">
+        <item name="android:textColor">@drawable/yx_btn_a_05_selector</item>
+        <item name="android:textSize">@dimen/T04</item>
+        <item name="android:background">@drawable/yx_btn_a_05_selector</item>
+    </style>
+    <style name="C_01">
+        <item name="android:drawablePadding">7pt</item>
+        <item name="android:textSize">@dimen/T09</item>
+        <item name="android:textColor">@drawable/yx_btn_a_06_selector</item>
+        <item name="android:background">@drawable/yx_btn_a_06_selector</item>
+    </style>
+    <style name="C_02">
+        <item name="android:drawablePadding">7pt</item>
+        <item name="android:textSize">@dimen/T09</item>
+        <item name="android:textColor">@drawable/yx_btn_a_07_selector</item>
+        <item name="android:background">@drawable/yx_btn_a_07_selector</item>
+    </style>
+    <style name="C_03">
+        <item name="android:drawablePadding">7pt</item>
+        <item name="android:textSize">@dimen/T09</item>
+        <item name="android:textColor">@drawable/yx_btn_a_08_selector</item>
+        <item name="android:background">@drawable/yx_btn_a_08_selector</item>
     </style>
 </resources>
