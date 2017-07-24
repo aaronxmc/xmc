@@ -29,18 +29,6 @@ public class RetrofitCookie {
         API api = retrofit.create(API.class);
         return api;
     }
-    public API getApi2(){
-        ClearableCookieJar cookieJar =
-                new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(MyApplication.getContext()));
-        OkHttpClient okHttpClient = new OkHttpClient.Builder()
-                .cookieJar(cookieJar)
-                .build();
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://testhfs-be.yunxiao.com/")
-                .client(okHttpClient)
-                .build();
-        API api2 = retrofit.create(API.class);
-        return api2;
-    }
+
 
 }

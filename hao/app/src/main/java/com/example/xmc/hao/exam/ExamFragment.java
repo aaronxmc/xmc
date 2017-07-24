@@ -55,7 +55,6 @@ public class ExamFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final com.example.xmc.hao.databinding.ExamFragmentBinding mBinding=DataBindingUtil.inflate(inflater,R.layout.exam_fragment,container,false);
-        final ExamOverviewBeanDao mExamOverviewBeanDao =MyApplication.getInstances().getDaoSession().getExamOverviewBeanDao();
         RetrofitCookie retrofitCookie =new RetrofitCookie();
         api =retrofitCookie.getApi();
         Call<StudentExamTrend> call=api.getStudentExamTrend();

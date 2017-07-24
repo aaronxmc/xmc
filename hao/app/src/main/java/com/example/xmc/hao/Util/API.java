@@ -6,6 +6,7 @@ import com.example.xmc.hao.Login.UserAllPublicInfo;
 import com.example.xmc.hao.Login.UserPublicInfo;
 import com.example.xmc.hao.exam.StudentExamTrend;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -19,6 +20,11 @@ public interface API {
     //用户登录
     @POST("/v2/users/sessions")
     Call<LoginMsg> getLogin(@Body User user);
+
+    //RxJava,demo测试
+    @POST("/v2/users/sessions")
+    Observable<LoginMsg> login(@Body User user);
+
 
     //获取用户公开信息
     @GET("/v2/user-center/public-info")

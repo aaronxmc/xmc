@@ -18,6 +18,7 @@ import com.example.xmc.hao.MainActivity;
 import com.example.xmc.hao.R;
 import com.example.xmc.hao.Util.RetrofitCookie;
 import com.example.xmc.hao.databinding.ActivityLoginBinding;
+import com.xmc.greendao.gen.DaoMaster;
 
 public class LoginActivity extends AppCompatActivity implements MyHandlers{
     private EditText editTextUser,editTextPass;
@@ -49,7 +50,7 @@ public class LoginActivity extends AppCompatActivity implements MyHandlers{
         editTextUser.setText(pref.getString("username",null));
         editTextPass.setText(pref.getString("password",null));
 
-
+        DaoMaster.DevOpenHelper devOpenHelper=new DaoMaster.DevOpenHelper(getApplicationContext(),"xxx_db",null);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
