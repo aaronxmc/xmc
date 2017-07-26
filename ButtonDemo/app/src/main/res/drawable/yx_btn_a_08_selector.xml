@@ -14,7 +14,16 @@
             <solid android:color="@color/y07" />
         </shape>
     </item>
+    <item
+        android:state_focused="true"
+        android:color="@color/r11"
+        >
+        <shape>
+            <corners android:radius="3pt" />
+            <solid android:color="@color/y08" />
+        </shape>
 
+    </item>
     <item android:color="@color/r11">
         <shape>
             <corners android:radius="3pt" />

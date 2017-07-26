@@ -7,14 +7,10 @@
     android:layout_height="match_parent"
     tools:context="com.example.xmc.buttondemo.MainActivity">
 
-<TextView
-    style="@style/C_03"
+<com.example.xmc.buttondemo.IconButton
+    android:drawableRight="@mipmap/ic_launcher"
+    app:iconPadding="7dp"
+    android:text="12345"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:layout_height="wrap_content"
-    android:text="什么"
-    />
-
-
-
+    android:layout_height="wrap_content"/>
 </LinearLayout>
