@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,16 +33,17 @@ public class MineFragment extends Fragment {
     private SharedPreferences prefs;
     private SharedPreferences.Editor mEditor;
     private CircleImageView mCircleImageView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.mine_fragment,container,false);
-        mCircleImageView=(CircleImageView)view.findViewById(R.id.mine_circle_imageView);
-        logoutButton=(Button)view.findViewById(R.id.btn_logout);
+        View view = inflater.inflate(R.layout.mine_fragment, container, false);
+        mCircleImageView = (CircleImageView) view.findViewById(R.id.mine_circle_imageView);
+        logoutButton = (Button) view.findViewById(R.id.btn_logout);
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(), LoginActivity.class);
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
             }
         });
@@ -51,6 +53,7 @@ public class MineFragment extends Fragment {
         call.enqueue(new Callback<UserAllPublicInfo>() {
             @Override
             public void onResponse(Call<UserAllPublicInfo> call, Response<UserAllPublicInfo> response) {
+                Log.e("xmc", "onResponse: " + response.body().getData().getNickName() + response.body().getData().getPhoneNumber());
                 Glide.with(MineFragment.this).load(response.body().getData().getAvatar()).into(mCircleImageView);
             }
 

@@ -48,22 +48,23 @@ import retrofit2.Response;
 
 public class ExamFragment extends Fragment {
     private API api;
-    private TextView scoreTextView,examNameTextView;
+    private TextView scoreTextView, examNameTextView;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final com.example.xmc.hao.databinding.ExamFragmentBinding mBinding=DataBindingUtil.inflate(inflater,R.layout.exam_fragment,container,false);
-        RetrofitCookie retrofitCookie =new RetrofitCookie();
-        api =retrofitCookie.getApi();
-        Call<StudentExamTrend> call=api.getStudentExamTrend();
+        final com.example.xmc.hao.databinding.ExamFragmentBinding mBinding = DataBindingUtil.inflate(inflater, R.layout.exam_fragment, container, false);
+        RetrofitCookie retrofitCookie = new RetrofitCookie();
+        api = retrofitCookie.getApi();
+        Call<StudentExamTrend> call = api.getStudentExamTrend();
         call.enqueue(new Callback<StudentExamTrend>() {
             @Override
             public void onResponse(Call<StudentExamTrend> call, Response<StudentExamTrend> response) {
+                Log.e("xmc", "............"+response.body().getMsg());
                 mBinding.setStudentExamTrend(response.body());
 
-                }
+            }
 
             @Override
             public void onFailure(Call<StudentExamTrend> call, Throwable t) {
